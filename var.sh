@@ -6,7 +6,7 @@
 a=10
 x=100
 y=true
-name= DevOPS
+name='DevOPS'
 
 #how to access the variables
 #$variable name

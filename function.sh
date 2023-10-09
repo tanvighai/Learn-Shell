@@ -1,7 +1,7 @@
 # how to declare a function
 
-abc(){
-  I love myself
+abc() {
+  Ilovemyself
 }
 
 #How to access a function simply function name
