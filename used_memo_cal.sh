@@ -10,7 +10,7 @@ elif [ $used_percentage -lt 70]; then
 else
  echo Mem stat is red
 fi
-echo $used_percentage
+
 
 
 #here bc is the command line calculator but it is not bale to process the decimal calculations
