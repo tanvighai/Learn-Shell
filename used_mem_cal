@@ -10,3 +10,13 @@ echo $used_percentage
 #0-50 used -> good (green)
 #51-70 used -> orange
 #>70 -> red
+if [ $used_percentage -lt 50]; then
+ echo -e “\e[32m$used_percentage\e[0m”
+elif [ $used_percentage -gt 50]; then
+ echo -e “\e[33m$used_percentage\e[0m”
+else
+ echo -e “\e[31m$used_percentage\e[0m”
+fi
+
+ echo $used_percentage
+
