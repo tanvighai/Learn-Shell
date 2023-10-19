@@ -3,9 +3,9 @@ free=$(free | grep Mem | awk '{print $4}')
 
 used_percentage=$(echo "scale=2; 100-($free / $total * 100)" | bc -l)
 
-if [ $used_percentage -lt 50]; then
+if [ $used_percentage -lt 50 ]; then
  echo -e “\e[32m"$used_percentage"\e[0m”
-elif [ $used_percentage -gt 50]; then
+elif [ $used_percentage -lt 70]; then
  echo -e “\e[33m"$used_percentage"\e[0m”
 else
  echo -e “\e[31m"$used_percentage"\e[0m”
