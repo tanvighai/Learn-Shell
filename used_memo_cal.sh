@@ -4,11 +4,11 @@ free=$(free | grep Mem | awk '{print $4}')
 used_percentage=$(echo "(100 - ($free / $total * 100)" | bc -l | awk -F . '{print $1}')
 
 if [ $used_percentage -lt 50 ]; then
- echo -e “\e[32m"$used_percentage"\e[0m”
+ echo Mem stat is green
 elif [ $used_percentage -lt 70]; then
- echo -e “\e[33m"$used_percentage"\e[0m”
+ echo Mem stat is Orange
 else
- echo -e “\e[31m"$used_percentage"\e[0m”
+ echo Mem stat is red
 fi
 echo $used_percentage
 
