@@ -7,3 +7,4 @@ abc() {
 #How to access a function simply function name
 
 abc
+ndkdnkdjfm,jdd,dmalkwqne qwndadkjqweqwkqjwej
